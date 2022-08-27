@@ -51,7 +51,7 @@ pipeline {
 			steps {
 				//"docker build -t dipaksdocker/currency-exchange-devops:$env.BUILD_ID"
 				script {
-					dockerImage = docker.build("dipaksdocker/currency-exchange-devops:{$env.BUILD_ID}")
+					dockerImage = docker.build("dipaksdocker/currency-exchange-devops:{$env.BUILD_TAG}")
 				}
 			}
 		}
